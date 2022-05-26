@@ -3,6 +3,13 @@
     internal class MyArray<T>
     {
         private T[] _mainArray = new T[0];
+        public T this[int index]
+        {
+            get
+            {
+                return _mainArray[index];
+            }
+        }
         public int Length
         {
             get
@@ -56,6 +63,29 @@
                         _mainArray[i] = value;
                     }
                 }
+            }
+            else
+            {
+                System.Console.Write("Index out of range!");
+                System.Console.ReadKey(true);
+                System.Console.WriteLine();
+            }
+        }
+        public void RemoveByIndex(int index)
+        {
+            if (index < _mainArray.Length)
+            {
+                T[] tempArr = new T[_mainArray.Length - 1];
+                var j = 0;
+                for (var i = 0; i < _mainArray.Length; i++)
+                {
+                    if (i != index)
+                    {
+                        tempArr[j] = _mainArray[i];
+                        j++;
+                    }
+                }
+                _mainArray = tempArr;
             }
             else
             {
