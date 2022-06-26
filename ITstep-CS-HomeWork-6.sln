@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITstep-CS-HomeWork-6", "ITstep-CS-HomeWork-6\ITstep-CS-HomeWork-6.csproj", "{47301BFB-9D11-4E52-A73D-F64FE20D8145}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{B467C9EF-C6E1-45A2-986D-B4E00EC2FB3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{47301BFB-9D11-4E52-A73D-F64FE20D8145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47301BFB-9D11-4E52-A73D-F64FE20D8145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47301BFB-9D11-4E52-A73D-F64FE20D8145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B467C9EF-C6E1-45A2-986D-B4E00EC2FB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B467C9EF-C6E1-45A2-986D-B4E00EC2FB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B467C9EF-C6E1-45A2-986D-B4E00EC2FB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B467C9EF-C6E1-45A2-986D-B4E00EC2FB3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

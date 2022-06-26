@@ -1,4 +1,4 @@
-﻿namespace ITstep_CS_HomeWork_6
+﻿namespace ConsoleApp1
 {
     internal class MyArray<T>
     {
@@ -17,7 +17,7 @@
                 return _mainArray.Length;
             }
         }
-        public void Add(T value)
+        public void AddValue(T value)
         {
             T[] tempArr = new T[_mainArray.Length + 1];
             for (var i = 0; i < _mainArray.Length; i++)
@@ -27,7 +27,7 @@
             tempArr[tempArr.Length - 1] = value;
             _mainArray = tempArr;
         }
-        public void Insert(int index, T value)
+        public void InsertTo(int index, T value)
         {
             if (index < _mainArray.Length)
             {
@@ -52,7 +52,7 @@
                 System.Console.WriteLine();
             }
         }
-        public void Update(int index, T value)
+        public void UpdateAt(int index, T value)
         {
             if (index < _mainArray.Length)
             {
@@ -71,7 +71,7 @@
                 System.Console.WriteLine();
             }
         }
-        public void Remove(int index)
+        public void RemoveFrom(int index)
         {
             if (index < _mainArray.Length)
             {

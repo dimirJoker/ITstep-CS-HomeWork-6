@@ -1,35 +1,38 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ITstep_CS_HomeWork_6
+namespace ConsoleApp1
 {
     internal class Program
     {
-        static void PrintUnicValue(MyArray<int> firstArray, MyArray<int> SecondArray)
+        static void PrintUnicValue(List<int> firstArray, List<int> SecondArray)
         {
-            var tempArr = new MyArray<int>();
-            for (var i = 0; i < firstArray.Length; i++)
+            var tempArr = new List<int>();
+            for (var i = 0; i < firstArray.Count; i++)
             {
                 tempArr.Add(firstArray[i]);
             }
-            for (var i = 0; i < SecondArray.Length; i++)
+            for (var i = 0; i < SecondArray.Count; i++)
             {
                 tempArr.Add(SecondArray[i]);
             }
-            for (var i = 0; i < tempArr.Length; i++)
+            for (var i = 0; i < tempArr.Count; i++)
             {
                 var toKill = false;
-                for (var j = i + 1; j < tempArr.Length; j++)
+                for (var j = i + 1; j < tempArr.Count; j++)
                 {
                     if (tempArr[j] == tempArr[i])
                     {
-                        tempArr.Remove(j);
+                        tempArr.RemoveAt(j);
                         toKill = true;
                     }
                 }
                 if (toKill == true)
                 {
-                    tempArr.Remove(i);
+                    tempArr.RemoveAt(i);
                 }
                 else
                 {
@@ -39,8 +42,8 @@ namespace ITstep_CS_HomeWork_6
         }
         static void Main(string[] args)
         {
-            MyArray<int> myArr0 = new MyArray<int>();
-            MyArray<int> myArr1 = new MyArray<int>();
+            var myArr0 = new List<int>();
+            var myArr1 = new List<int>();
             var rSeed = new Random();
             for (var i = 0; i < 10; i++)
             {
